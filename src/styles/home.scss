@@ -76,6 +76,11 @@
 	border: 1px solid var(--border-line);
 	border-radius: $corner;
 	overflow: hidden;
+	transition: border 0.3s;
+
+	&:hover {
+		border: 1px solid var(--border-line-hover);
+	}
 
 	.card-head {
 		@include flex(0, column, center, center);
