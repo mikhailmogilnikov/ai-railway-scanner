@@ -1,5 +1,6 @@
 import { GithubLogo } from '@phosphor-icons/react'
 import AdvantageCard from './AdvantageCard'
+import { NavLink } from 'react-router-dom'
 
 const Advantages = () => {
 	return (
@@ -33,16 +34,17 @@ const Advantages = () => {
 					'Программа воспроизводит сигнал при распозновании критической ситуации.'
 				}
 			/>
-			<div
+			<NavLink
+				to={'https://github.com/Sereneum/ai-railway-scanner-app'}
+				target='_blank'
 				className='card-wrapper large'
 				style={{ boxShadow: '0 0 40px 0 rgba(0, 0, 0, 0.05)', height: '100%' }}
 			>
 				<div className='card-text-wrapper' style={{ padding: '1.5em' }}>
 					<h2>Скачать приложение с GitHub</h2>
-					<p className='low-opacity'></p>
 					<GithubLogo weight='fill' className='icon-git-large' />
 				</div>
-			</div>
+			</NavLink>
 			<AdvantageCard
 				name={'Возможность дообучения'}
 				desc={

@@ -25,10 +25,14 @@ export const Header = () => {
 					>
 						<HackatonLogo />
 					</NavLink>
-					<div className='github-button'>
+					<NavLink
+						to={'https://github.com/Sereneum/ai-railway-scanner-app'}
+						target='_blank'
+						className='github-button'
+					>
 						<GithubLogo weight='bold' className='icon-big' />
 						<p>GitHub</p>
-					</div>
+					</NavLink>
 				</div>
 			</div>
 		</header>

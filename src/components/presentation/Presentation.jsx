@@ -18,7 +18,7 @@ const Presentation = () => {
 			
 			<div className='button-wrapper' style={{ maxWidth: '400px' }}>
 				<NavLink to={'/graph'} className='button premier-button select-zoom'>
-					<p>Открыть визуализацию</p>
+					<p>Визуализировать данные</p>
 				</NavLink>
 			</div>
 

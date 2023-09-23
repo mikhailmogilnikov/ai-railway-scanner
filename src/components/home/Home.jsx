@@ -16,7 +16,7 @@ export const Home = () => {
 					<p>О проекте</p>
 				</NavLink>
 				<NavLink to={'/graph'} className='button premier-button select-zoom'>
-					<p>Открыть визуализацию</p>
+					<p>Визуализировать данные</p>
 				</NavLink>
 			</div>
 
@@ -35,7 +35,7 @@ export const Home = () => {
 					<p>О проекте</p>
 				</NavLink>
 				<NavLink to={'/graph'} className='button premier-button select-zoom'>
-					<p>Открыть визуализацию</p>
+					<p>Визуализировать данные</p>
 				</NavLink>
 			</div>
 		</div>
