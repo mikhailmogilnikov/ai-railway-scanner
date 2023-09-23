@@ -3,7 +3,7 @@
 	--bg-fader: rgba(0, 0, 0, 0.55);
 	--text: #ffffff;
 	--text-inv: #000000;
-	--hover: #1a1a1a;
+	--hover: #101010;
 	--active: rgb(46, 46, 46);
 	--shadow: rgba(255, 64, 0, 0.518);
 	--header-line: rgba(255, 255, 255, 0.2);
@@ -13,6 +13,9 @@
 	--shadow-orange: rgba(255, 64, 0, 0.518);
 	--element: #141414;
 	--grad: linear-gradient(60deg, #727272, #ffffff);
+	--git-grad: linear-gradient(140deg, #bd60e570, #8080ff69);
+	--git-shadow: transparent;
+	--git-color: #8787ef;
 }
 
 @media (prefers-color-scheme: light) {
@@ -30,6 +33,9 @@
 		--hover-orange: #e43100;
 		--element: #ffffff;
 		--grad: linear-gradient(340deg, #ff4100, #000000);
+		--git-grad: linear-gradient(60deg, #8469b4, #8787ef);
+		--git-shadow: rgba(100, 75, 209, 0.25);
+		--git-color: transparent;
 	}
 }
 

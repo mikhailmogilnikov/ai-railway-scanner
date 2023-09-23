@@ -1,5 +1,5 @@
 import '../../styles/header.scss'
-import { Scan } from '@phosphor-icons/react'
+import { GithubLogo, Scan } from '@phosphor-icons/react'
 
 import { useScroll } from '../../hooks/useScroll'
 import HackatonLogo from '../../resources/svg/HackatonLogo'
@@ -17,13 +17,19 @@ export const Header = () => {
 					<RailwaysLogo />
 					<h1>Распознание сущностей</h1>
 				</NavLink>
-				<NavLink
-					to={'https://hacks-ai.ru'}
-					target='_blank'
-					className='hackaton-header'
-				>
-					<HackatonLogo />
-				</NavLink>
+				<div className='additional-content'>
+					<NavLink
+						to={'https://hacks-ai.ru'}
+						target='_blank'
+						className='hackaton-header'
+					>
+						<HackatonLogo />
+					</NavLink>
+					<div className='github-button'>
+						<GithubLogo weight='bold' className='icon-big' />
+						<p>GitHub</p>
+					</div>
+				</div>
 			</div>
 		</header>
 	)

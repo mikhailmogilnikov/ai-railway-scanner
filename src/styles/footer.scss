@@ -28,17 +28,23 @@
 }
 
 .footer-title {
-	@include flex(6px, row, center, start);
+	@include flex(1em, row, center, start);
 
 	align-self: flex-start;
 	width: fit-content;
 
 	h1 {
-		font-size: 30px;
+		font-size: 18px;
 	}
 
 	.icon-big {
 		width: 34px;
+	}
+
+	svg {
+		width: 80px;
+		height: auto;
+		fill: #d94216;
 	}
 }
 

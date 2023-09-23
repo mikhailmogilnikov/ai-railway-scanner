@@ -1,8 +1,6 @@
 import { NavLink } from 'react-router-dom'
-import AiAnimation from '../../animations/AiAnimation'
-import AttachAnimation from '../../animations/AttachAnimation'
-import MapAnimation from '../../animations/MapAnimation'
 import '../../styles/home.scss'
+import Advantages from './Advantages'
 
 export const Home = () => {
 	return (
@@ -15,14 +13,18 @@ export const Home = () => {
 
 			<div className='button-wrapper'>
 				<NavLink to={'/presentation'} className='button select-zoom'>
-					<p>Презентация проекта</p>
+					<p>О проекте</p>
 				</NavLink>
-				<NavLink to={'/map'} className='button premier-button select-zoom'>
-					<p>Установить решение</p>
+				<NavLink to={'/graph'} className='button premier-button select-zoom'>
+					<p>Открыть визуализацию</p>
 				</NavLink>
 			</div>
 
-			<h2 className='text-mini-title'>Как это работает?</h2>
+			<div className='mid-text-wrapper'>
+				<h2>Преимущества.</h2>
+			</div>
+
+			<Advantages />
 
 			<div className='mid-text-wrapper'>
 				<h2>Исследовать.</h2>
@@ -30,10 +32,10 @@ export const Home = () => {
 
 			<div className='button-wrapper' style={{ paddingBottom: '4em' }}>
 				<NavLink to={'/presentation'} className='button select-zoom'>
-					<p>Презентация проекта</p>
+					<p>О проекте</p>
 				</NavLink>
-				<NavLink to={'/map'} className='button premier-button select-zoom'>
-					<p>Открыть карту</p>
+				<NavLink to={'/graph'} className='button premier-button select-zoom'>
+					<p>Открыть визуализацию</p>
 				</NavLink>
 			</div>
 		</div>

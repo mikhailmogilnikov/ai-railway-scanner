@@ -54,11 +54,52 @@
 	}
 }
 
+.additional-content {
+	@include flex(2em, row, center, center);
+
+	width: min-content;
+	height: auto;
+}
+
+.github-button {
+	@include flex(0.5em, row, center, center);
+
+	width: max-content;
+	padding: 0.5em 1em;
+	background-image: var(--git-grad);
+	border-radius: 18px;
+	box-shadow: 0 6px 10px 0 var(--git-shadow);
+	cursor: pointer;
+	user-select: none;
+	transition: transform 0.2s, box-shadow 0.2s;
+
+	&:active {
+		transform: scale(0.95);
+		box-shadow: 0 2px 5px 0 var(--git-shadow);
+	}
+
+	p {
+		font-weight: 600;
+		font-size: 15px;
+		color: white;
+
+		@media (max-width: 600px) {
+			display: none;
+		}
+	}
+
+	.icon-big {
+		width: 1.5em;
+		color: white;
+	}
+}
+
 .hackaton-header {
 	width: 260px;
 	height: auto;
+	flex-shrink: 0;
 
-	@media (max-width: 600px) {
+	@media (max-width: 800px) {
 		display: none;
 	}
 
