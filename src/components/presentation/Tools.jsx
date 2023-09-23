@@ -1,42 +1,86 @@
 import ToolsCard from './ToolsCard'
-import Yolo from '../../resources/images/yolo.png'
-import ROS2 from '../../resources/images/ros2.png'
-import Python from '../../resources/images/4e105f96750899.5eb54f337fb8e.png'
-import WSL from '../../resources/images/wsl.jpg'
+import Python from '../../resources/images/python.png'
+import JavaScript from '../../resources/images/JavaScript.png'
+import OpenCV from '../../resources/images/OpenCV.png'
 
 const Tools = () => {
 	return (
 		<div className='wrapper'>
-			<h2 className='text-mini-title'>Инструменты</h2>
+			<h2 className='text-mini-title'>Технологии</h2>
 
-			<div className='problem-wrapper'>
+			<div className='grid-3-wrapper'>
+				<ToolsCard
+					img={Python}
+					name={'Python'}
+					desc={
+						'Язык программирования. Применяется для работы нейросети.'
+					}
+				/>
+				<ToolsCard
+					img={JavaScript}
+					name={'JavaScript'}
+					desc={
+						'Язык программирования. Служит проводником между интерфейсом и программой.'
+					}
+				/>
+				<ToolsCard
+					img={OpenCV}
+					name={'OpenCV'}
+					desc={
+						'Библиотека алгоритмов компьютерного зрения и обработки изображений.'
+					}
+				/>
 				<ToolsCard
 					name={'YOLOv4'}
 					desc={
-						'Быстрая и точная real-time нейросеть.'
+						'Быстрая и точная real-time нейросеть. Может запускаться на слабых машинах.'
 					}
-					img={Yolo}
-				/>
-					<ToolsCard
-					name={'ROS2'}
-					desc={
-						'Набор инструментов для робототехники.'
-					}
-					img={ROS2}
 				/>
 				<ToolsCard
-					name={'Python'}
+					name={'Eel'}
 					desc={
-						'Язык программирования.'
+						'Библиотека для создания десктопных приложений с веб-технологиями и Python.'
 					}
-					img={Python}
 				/>
 				<ToolsCard
-					name={'WSL'}
+					name={'OpenLabeling'}
+					desc={'Инструмент для разметки полученного датасета.'}
+				/>
+				<ToolsCard
+					name={'HTML'}
 					desc={
-						'Linux внутри Windows.'
+						'Язык разметки, на нём строится структура веб-сайта и приложения.'
 					}
-					img={WSL}
+				/>
+				<ToolsCard
+					name={'SCSS'}
+					desc={
+						'Препроцессор для CSS. Оптимизирует работу с вёрсткой контента.'
+					}
+				/>
+				<ToolsCard
+					name={'React'}
+					desc={
+						'Библиотека для создания пользовательских интерфейсов на JavaScript.'
+					}
+				/>
+				<ToolsCard
+					name={'React-dropzone'}
+					desc={
+						'Библиотека для React, позволяющая делать продвинутые области прикрепления файлов.'
+					}
+				/>
+				<ToolsCard
+					name={'Recharts'}
+					desc={
+						'Библиотека для построения графиков на основе полученных данных.'
+					}
+				/>
+				<ToolsCard
+					name={'Tkinter'}
+					desc={
+						'Библиотека для Python, используемая для получения файлов из Windows.'
+					}
 				/>
 			</div>
 		</div>

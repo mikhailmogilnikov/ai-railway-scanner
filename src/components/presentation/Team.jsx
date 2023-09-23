@@ -1,38 +1,50 @@
-import vanya from '../../resources/images/photo_2023-09-10 02.10.21.jpeg'
-import misha from '../../resources/images/tempImagerDJpu3.jpg'
-import max from '../../resources/images/photo_2023-09-10 02.14.57.jpeg'
+import vanya from '../../resources/images/ivan.jpg'
+import misha from '../../resources/images/misha.jpg'
+import max from '../../resources/images/max.jpg'
+import danila from '../../resources/images/danila.jpg'
+import denis from '../../resources/images/denis.jpg'
 import Person from './Person'
 
 const Team = () => {
-	return ( <div className='wrapper'>
-	<h2 className='text-mini-title'>Команда</h2>
-	<div className='team-wrapper'>
-		<Person name={'Иван Дьяконов'} role={'ML Engineer'} img={vanya} />
+	return (
+		<div className='wrapper'>
+			<h2 className='text-mini-title'>Команда</h2>
+			<div className='team-wrapper'>
+				<Person name={'Иван Дьяконов'} role={'ML Engineer'} img={vanya} />
 
-		<div className='line'></div>
+				<Person
+					name={'Максим Романов'}
+					role={'Fullstack Developer'}
+					img={max}
+				/>
 
-		<Person
-			name={'Максим Романов'}
-			role={'Fullstack Developer'}
-			img={max}
-		/>
+				<Person
+					name={'Михаил Могильников'}
+					role={'Frontend Developer'}
+					img={misha}
+				/>
 
-		<div className='line'></div>
+				<Person
+					name={'Денис Оржеховский'}
+					role={'Python Developer'}
+					img={denis}
+				/>
 
-		<Person
-			name={'Михаил Могильников'}
-			role={'Frontend Developer'}
-			img={misha}
-		/>
-	</div>
-	<div className='wrapper' style={{ gap: '30px' }}>
-		<h1>"space"</h1>
-		<h5 className='low-opacity'>
-			Состав молодых и амбициозных разработчиков, движимых желанием
-			создавать.
-		</h5>
-	</div>
-</div> );
+				<Person
+					name={'Данила Ненашев'}
+					role={'System Analyst'}
+					img={danila}
+				/>
+			</div>
+			<div className='wrapper' style={{ gap: '30px' }}>
+				<h1>"space"</h1>
+				<h5 className='low-opacity'>
+					Состав молодых и амбициозных разработчиков, движимых желанием
+					создавать.
+				</h5>
+			</div>
+		</div>
+	)
 }
- 
-export default Team;
+
+export default Team
