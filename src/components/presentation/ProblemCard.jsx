@@ -1,15 +1,13 @@
-import { CurrencyRub, Tree, Warning, RoadHorizon } from '@phosphor-icons/react'
+import { Warning, PersonSimpleRun, Graph } from '@phosphor-icons/react'
 
 const ProblemCard = ({ icon, name, desc }) => {
 	let iconComponent
 	if (icon === 'Warning') {
 		iconComponent = <Warning className='icon-card'/>
-	} else if (icon === 'Tree') {
-		iconComponent = <Tree className='icon-card'/>
+	} else if (icon === 'Graph') {
+		iconComponent = <Graph className='icon-card'/>
 	} else if (icon === 'CurrencyRub') {
-		iconComponent = <CurrencyRub className='icon-card'/>
-	} else if (icon === 'RoadHorizon') {
-		iconComponent = <RoadHorizon className='icon-card'/>
+		iconComponent = <PersonSimpleRun className='icon-card'/>
 	} else {
 		iconComponent = null
 	}

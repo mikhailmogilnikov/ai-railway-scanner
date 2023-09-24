@@ -16,7 +16,7 @@ const Presentation = () => {
 			<Tools />
 			<Scale />
 			
-			<div className='button-wrapper' style={{ maxWidth: '400px' }}>
+			<div className='button-wrapper' style={{ maxWidth: '400px', marginBottom: '70px' }}>
 				<NavLink to={'/graph'} className='button premier-button select-zoom'>
 					<p>Визуализировать данные</p>
 				</NavLink>
