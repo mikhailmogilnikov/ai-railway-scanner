@@ -1,4 +1,4 @@
-import { AppWindow, ChartLine, UserFocus } from '@phosphor-icons/react'
+import { AppWindow, ChartBar, ChartLine, UserFocus } from '@phosphor-icons/react'
 
 
 const AdvantageCard = ({icon, name, desc}) => {
@@ -8,7 +8,7 @@ const AdvantageCard = ({icon, name, desc}) => {
 	} else if (icon === 'Paperclip') {
 		iconComponent = <UserFocus weight='thin' className='icon-card adv'/>
 	} else if (icon === 'Chartline') {
-		iconComponent = <ChartLine weight='thin' className='icon-card adv'/>
+		iconComponent = <ChartBar weight='thin' className='icon-card adv'/>
 	} else {
 		iconComponent = null
 	}
