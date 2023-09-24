@@ -1,6 +1,6 @@
 # Веб-сайт решения команды Space
 
-![startscreen](./src/resources/images/screen2.png)
+![startscreen](./src/resources/images/screen1.png)
 
 ## Описание решения
 
