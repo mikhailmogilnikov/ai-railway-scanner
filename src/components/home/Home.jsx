@@ -30,7 +30,7 @@ export const Home = () => {
 				<h2>Исследовать.</h2>
 			</div>
 
-			<div className='button-wrapper' style={{ paddingBottom: '4em' }}>
+			<div className='button-wrapper' style={{ marginBottom: '8em' }}>
 				<NavLink to={'/presentation'} className='button select-zoom'>
 					<p>О проекте</p>
 				</NavLink>
